@@ -1,12 +1,21 @@
-import Layout from "@/layout/Layout";
+import Layout from "@/layouts/Layout";
+import SectionLayout from "@/layouts/SectionLayout";
 
 const Home = () => {
+	const sections = [
+		{ id: 1, link: "ABOUT" },
+		{ id: 2, link: "SKILLS" },
+		{ id: 3, link: "PROJECTS" },
+		{ id: 4, link: "HIRE" },
+	];
+
 	return (
 		<Layout>
-			<section id="section-1" className="min-h-screen bg-gray-400"></section>
-			<section id="section-2" className="min-h-screen bg-gray-500"></section>
-			<section id="section-3" className="min-h-screen bg-gray-600"></section>
-			<section id="section-4" className="min-h-screen bg-gray-700"></section>
+			{sections.map(({ id, link }) => (
+				<SectionLayout key={id} id={id} link={link}>
+					{link}
+				</SectionLayout>
+			))}
 		</Layout>
 	);
 };
