@@ -1,6 +1,6 @@
+import { Link } from "react-scroll";
 import { classNames } from "@/utils";
 
-import Link from "next/link";
 import Logo from "./Logo";
 import Button from "../button/Button";
 
@@ -21,7 +21,7 @@ const Header = () => {
 				"px-2 py-6 md:py-8 lg:py-12 z-10"
 			)}
 		>
-			<Link href="#" className="hidden lg:block">
+			<Link to="hero" smooth duration={500} className="hidden lg:block cursor-pointer">
 				<Logo />
 			</Link>
 
@@ -31,8 +31,10 @@ const Header = () => {
 						{navigation.map(({ id, link }) => (
 							<li key={id} className={classNames("px-1 md:px-2 lg:px-4", "py-1 lg:py-2")}>
 								<Link
-									href={`#${link}`}
-									className="text-md sm:text-lg md:text-xl lg:text-2xl capitalize"
+									to={link}
+									smooth
+									duration={500}
+									className="text-md sm:text-lg md:text-xl lg:text-2xl capitalize cursor-pointer"
 								>
 									{link}
 								</Link>
