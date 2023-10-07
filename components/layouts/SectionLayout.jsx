@@ -6,7 +6,7 @@ const SectionLayout = ({ children, id, controls, ...styles }) => {
 
 	return (
 		<section id={id} className={classNames("min-h-screen flex justify-center px-2", section)}>
-			<Element name={id} className={classNames("w-full sm:w-[90%] md:w-[75%]", div)}>
+			<Element name={id} className={classNames("w-full sm:w-[90%] md:w-[80%]", div)}>
 				{children}
 			</Element>
 		</section>

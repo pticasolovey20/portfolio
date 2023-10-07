@@ -5,7 +5,7 @@ const Button = ({ text, styles, onClick }) => {
 		<button
 			className={classNames(
 				styles,
-				"px-2 lg:px-4 py-1.5 lg:py-2.5",
+				"px-2 lg:px-4 py-2.5",
 				"text-primary-green font-medium",
 				"text-md sm:text-lg lg:text-xl",
 				"border-2 border-primary-green rounded-lg",
