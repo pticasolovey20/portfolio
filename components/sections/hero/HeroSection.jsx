@@ -20,7 +20,7 @@ const HeroSection = () => {
 				transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
 				className={classNames(
 					"absolute",
-					"top-[17%] md:top-[20%] lg:top-[25%]",
+					"top-[20%] lg:top-[25%]",
 					"right-[15px] md:right-[-50px] lg:right-[-70px]",
 					"w-[30%] md:w-[35%] xl:w-[40%]"
 				)}
