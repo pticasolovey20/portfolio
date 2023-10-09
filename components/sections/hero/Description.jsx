@@ -7,7 +7,7 @@ const Description = () => {
 	return (
 		<div
 			className={classNames(
-				"mb-[4rem] md:mb-28 lg:mb-20 xl:mb-0",
+				"mb-[5rem] md:mb-28 lg:mb-20 xl:mb-0",
 				"xl:mt-16 self-end xl:self-center",
 				"col-end-7 col-span-5",
 				"md:col-end-6 md:col-span-5",
