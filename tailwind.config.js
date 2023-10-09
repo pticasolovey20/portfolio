@@ -18,7 +18,16 @@ module.exports = {
 		},
 
 		extend: {
-			colors: {},
+			colors: {
+				primary: {
+					background: "#1c1c1c",
+					green: "#18c474",
+				},
+			},
+
+			backgroundImage: {
+				"hero-background": "url('/img/hero-background.png')",
+			},
 		},
 	},
 	plugins: [],
